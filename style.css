@@ -1,0 +1,59 @@
+body{
+  margin:0;
+  background-color: black;
+
+}
+
+div.sky{
+  width:100%;
+  height:40vh;
+  background: black;
+  animation-name: skycolor;
+  animation-fill-mode:backwards;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+
+div.grass{
+ width:100%;
+ height:60vh;
+ background: green;
+ position: relative;
+}
+
+.sun{
+  background: #FDB813;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  animation-name: sunmotion;
+  animation-fill-mode:backwards;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes skycolor {
+  0%{ background-color: black;}
+  10%{ background-color: #ffca7c;}
+  30%{ background-color: #87ceeb;}
+  70%{ background-color: #87ceeb;}
+  90%{ background-color: pink;}
+  100%{ background-color: black;}
+
+}
+
+@keyframes sunmotion {
+  0%{transform: translate(-5vw, 10vh); background-color: #FDB813;}
+  25%{transform: translate(25vw, -10vh);background-color: #FD5E53;}
+  50%{transform: translate(45vw, -25vh); background-color: #FDB813;}
+  57%{transform: translate(45vw, -25vh); background-color: #FDB813;}
+  75%{transform: translate(70vw, -13vh); background-color: #FD5E53;}
+  100%{transform: translate(99vw , 8vh); background-color: #FDB813;}
+
+}
