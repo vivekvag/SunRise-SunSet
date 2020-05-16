@@ -22,6 +22,12 @@ div.grass{
  height:60vh;
  background: green;
  position: relative;
+ animation-name: grasscolor;
+ animation-fill-mode:backwards;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ position: relative;
 }
 
 .sun{
@@ -32,7 +38,7 @@ div.grass{
   position: absolute;
   bottom: 0;
   animation-name: sunmotion;
-  animation-fill-mode:backwards;
+  animation-fill-mode:forwards;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -45,6 +51,15 @@ div.grass{
   70%{ background-color: #87ceeb;}
   90%{ background-color: pink;}
   100%{ background-color: black;}
+
+}
+@keyframes grasscolor {
+  /* 0%{ background-color: #C8FFC9;}
+  50%{ background-color: #94FF7B;} */
+  0%{ background-color: #94FF7B; filter:brightness(75%);}
+  70%{ background-color: #00C503;}
+  /* 90%{ background-color: #87ceeb;} */
+  100%{ background-color: #086500;}
 
 }
 
