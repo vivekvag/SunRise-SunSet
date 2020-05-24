@@ -66,8 +66,10 @@ div.grass{
 @keyframes sunmotion {
   0%{transform: translate(-5vw, 10vh); background-color: #FDB813;}
   25%{transform: translate(25vw, -10vh);background-color: #FD5E53;}
+  48%{transform: translate(43vw, -25vh); background-color: #FDB813;}
   50%{transform: translate(45vw, -25vh); background-color: #FDB813;}
-  57%{transform: translate(45vw, -25vh); background-color: #FDB813;}
+  57%{transform: translate(45.5vw, -25vh); background-color: #FDB813;}
+  58%{transform: translate(47vw, -25vh); background-color: #FDB813;}
   75%{transform: translate(70vw, -13vh); background-color: #FD5E53;}
   100%{transform: translate(99vw , 8vh); background-color: #FDB813;}
 
