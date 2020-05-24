@@ -37,6 +37,8 @@ div.grass{
   border-radius: 50%;
   position: absolute;
   bottom: 0;
+  transform-origin: 200% 50%
+  transform: rotate(180deg)
   animation-name: sunmotion;
   animation-fill-mode:forwards;
   animation-duration: 10s;
